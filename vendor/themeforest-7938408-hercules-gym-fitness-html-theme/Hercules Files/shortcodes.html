@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Hercules</title>
+        <meta name="description" content="Here goes description" />
+        <meta name="author" content="author name" />
+        <link rel="shortcut icon" href="images/elements/favicon.ico" type="image/x-icon" />
+        <!-- ======================================================================
+                                    Mobile Specific Meta
+        ======================================================================= -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <!-- ======================================================================
+                                    Style CSS + Google Fonts
+        ======================================================================= -->
+        <link rel="stylesheet" href="css/swipebox.css" />
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="color-box/color-style.css" />
+        <link rel="stylesheet" href="color-box/farbtastic/farbtastic.css" />
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- === START COLOR BOX === -->
+        <div class="color_scheme">
+            <div class="color_scheme_settings"><i class="fa fa-cogs"></i></div>
+            <div class="color_scheme_title">Choose site color</div>
+            <ul id="site_color">
+                <li><span class="color_1"></span></li>
+                <li><span class="color_2"></span></li>
+                <li><span class="color_3"></span></li>
+                <li><span class="color_4"></span></li>
+                <li><span class="color_pick"></span></li>      
+            </ul>
+            <hr> 
+            <p>Choose your color skin</p>
+            <select name="site_color">
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+            </select>
+            <hr>
+            <p>Choose your layout style</p>
+            <select name="site_layout">
+                <option value="wide">Wide</option>
+                <option value="boxed">Boxed</option>
+            </select>
+            <hr> 
+            <p>Patterns for boxed version</p>
+            <ul id="background_patterns">
+                <li><img src="color-box/background/square_1.png" alt="patterns"></li>
+                <li><img src="color-box/background/square_2.png" alt="patterns"></li>
+                <li><img src="color-box/background/square_3.png" alt="patterns"></li>
+                <li><img src="color-box/background/square_4.png" alt="patterns"></li>
+                <li><img src="color-box/background/square_5.png" alt="patterns"></li>        
+            </ul>
+            <hr> 
+            <p>Images for boxed version</p>
+            <ul id="background_images">
+                <li><img src="color-box/background/back.jpg" alt="background"></li>
+                <li><img src="color-box/background/back_2.jpg" alt="background"></li>
+                <li><img src="color-box/background/back_3.jpg" alt="background"></li>
+                <li><img src="color-box/background/back_4.jpg" alt="background"></li>
+                <li><img src="color-box/background/back_5.jpg" alt="background"></li>        
+            </ul>
+        </div>
+        <!-- === END COLOR BOX === -->
+        <div class="boxed_fluid">
+
+
+        <!-- === START HEADER === -->
+        <header>
+            <div class="top-header d-border-c">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <ul>
+                                <li><i class="fa fa-phone d-text-c"></i> +555 234 762</li>
+                                <li><i class="fa fa-calendar d-text-c"></i> Mon - Fri 9:00 am - 17:00 pm</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <form class="search-form">
+                                <i class="fa fa-search d-text-c"></i>
+                                <input type="submit" value="" name="submit" class="search-button">
+                                <input class="search-line" name="search" type="text" placeholder="Search website">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom-header" id="home">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="logo">
+                                <i class="rombust d-bg-c d-border-c"><i class="fa fa-trophy"></i></i><a href="index.html"> Hercules</a>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <nav class="menu">
+                                <div class="responsive-menu d-text-c-h"><i class="fa fa-align-justify"></i>Menu</div>
+                                <ul>
+                                    <li class="active"><a class="d-text-c-h" href="index.html">Home</a>
+                                        <ul>
+                                            <li><a class="d-text-c-h" href="index.html">Home</a></li>
+                                            <li><a class="d-text-c-h" href="index-one-page.html">One Page Home</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="d-text-c-h" href="#">Gallery</a>
+                                        <ul>
+                                            <li><a class="d-text-c-h" href="gallery-2.html">Gallery 2C</a></li>
+                                            <li><a class="d-text-c-h" href="gallery-3.html">Gallery 3C</a></li>
+                                            <li><a class="d-text-c-h" href="gallery-4.html">Gallery 4C</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="d-text-c-h" href="#">Pages</a>
+                                        <ul>
+                                            <li><a class="d-text-c-h" href="classes.html">Classes</a></li>
+                                            <li><a class="d-text-c-h" href="trainers.html">Trainers</a></li>
+                                            <li><a class="d-text-c-h" href="timetable.html">Timetable</a></li>
+                                            <li><a class="d-text-c-h" href="error-404.html">Error-404</a></li>
+                                            <li><a class="d-text-c-h" href="project.html">Single project</a></li>
+                                            <li><a class="d-text-c-h" href="shop.html">Shop page</a></li>
+                                            <li><a class="d-text-c-h" href="shop-item.html">Single Product</a></li>
+                                            <li><a class="d-text-c-h" href="cart.html">Cart Page</a></li>
+                                            <li><a class="d-text-c-h" href="login-register.html">Login/Register Page</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="d-text-c-h" href="shortcodes.html">Shortcodes</a></li>
+                                    <li><a class="d-text-c-h" href="#">Blog</a>
+                                        <ul>
+                                            <li><a class="d-text-c-h" href="blog-2-ls.html">Blog Full width</a></li>
+                                            <li><a class="d-text-c-h" href="blog-2-ls.html">Blog 2C LS</a></li>
+                                            <li><a class="d-text-c-h" href="blog-2-rs.html">Blog 2C RS</a></li>
+                                            <li><a class="d-text-c-h" href="blog-3-ls.html">Blog 3C LS</a></li>
+                                            <li><a class="d-text-c-h" href="post.html">Single post</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="d-text-c-h" href="contact.html">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- === END HEADER === -->
+   
+
+
+
+        <!-- === START COTENT === -->
+        <div class="content">
+
+            <!-- === START PATH === -->
+            <div class="path">
+                <div class="padding black-bg">
+                    <div class="container">
+                        <div class="path-root">Home <i class="fa fa-chevron-right"></i> Shortcodes</div>
+                        <h4>Shortcodes</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- === END PATH === -->
+
+
+            <div class="container">
+            <h1 class="styled">Heading Style</h1>
+            <h1>H1 Heading</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</p>
+            <br/>
+            <h2>H2 Heading</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</p>
+            <br/>
+            <h3>H3 Heading</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</p>
+            <br/>
+            <h4>H4 Heading</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</p>
+            <br/>
+            <h5>H5 Heading</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</p>
+            <br/>
+            <h6>H6 Heading</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</p>
+            <br/><br/>
+            <h1 class="styled">Columns</h1>
+            <h6>Full width</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</p>
+            <br/>
+            <div class="row">
+                <div class="col-md-6">
+                <h6>1/2 column</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</p>
+                </div>
+                <div class="col-md-6">
+                <h6>1/2 column</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</p>
+                </div>
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col-md-4">
+                <h6>1/3 column</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+                </div>
+                <div class="col-md-4">
+                <h6>1/3 column</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. </p>
+                </div>
+                <div class="col-md-4">
+                <h6>1/3 column</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. </p>
+                </div>
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col-md-3">
+                <h6>1/4 column</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud exercitation.</p>
+                </div>
+                <div class="col-md-3">
+                <h6>1/4 column</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud exercitation.</p>
+                </div>
+                <div class="col-md-3">
+                <h6>1/4 column</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud exercitation.</p>
+                </div>
+                <div class="col-md-3">
+                <h6>1/4 column</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud exercitation.</p>
+                </div>
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col-md-4">
+                <h6>1/3 column</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud exercitation.</p>
+                </div>
+                <div class="col-md-8">
+                <h6>2/3 column</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud exercitation sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labor sit amet.</p>
+                </div>
+            </div>
+            <br/><br/>
+            <h1 class="styled">Large Buttons</h1>
+            <a href="#" class="button button-large button-type1 button-m1">Large Button</a>
+             &nbsp;  &nbsp;  &nbsp; 
+            <a href="#" class="button button-large button-type1 button-m2">Large Button</a>
+             &nbsp;  &nbsp;  &nbsp; 
+            <a href="#" class="button button-large button-type1 button-m3">Large Button</a>
+             &nbsp;  &nbsp;  &nbsp; 
+            <a href="#" class="button button-large button-type1 button-m4">Large Button</a>
+            <br/>
+            <a href="#" class="button button-large button-m5">Large Button</a>
+             &nbsp;  &nbsp;  &nbsp; 
+            <a href="#" class="button button-large button-m6">Large Button</a>
+             &nbsp;  &nbsp;  &nbsp; 
+            <a href="#" class="button button-large button-m7">Large Button</a>
+             &nbsp;  &nbsp;  &nbsp; 
+            <a href="#" class="button button-large button-m1">Large Button</a>
+            <br/>
+            <a href="#" class="button button-large button-type2 button-m1">Large Button</a>
+             &nbsp;  &nbsp;  &nbsp; 
+            <a href="#" class="button button-large button-type2 button-m2">Large Button</a>
+             &nbsp;  &nbsp;  &nbsp; 
+            <a href="#" class="button button-large button-type2 button-m3">Large Button</a>
+             &nbsp;  &nbsp;  &nbsp; 
+            <a href="#" class="button button-large button-type2 button-m4">Large Button</a>
+            <br/><br/><br/>
+            <h1 class="styled">Medium Buttons</h1>
+            <a href="#" class="button button-medium button-type1 button-m1">Medium Button</a>
+             &nbsp;  &nbsp;  &nbsp; 
+            <a href="#" class="button button-medium button-type1 button-m2">Medium Button</a>
+             &nbsp;  &nbsp;  &nbsp; 
+            <a href="#" class="button button-medium button-type1 button-m3">Medium Button</a>
+             &nbsp;  &nbsp;  &nbsp; 
+            <a href="#" class="button button-medium button-type1 button-m4">Medium Button</a>
+            <br/>
+            <a href="#" class="button button-medium button-m5">Medium Button</a>
+             &nbsp;  &nbsp;  &nbsp; 
+            <a href="#" class="button button-medium button-m6">Medium Button</a>
+             &nbsp;  &nbsp;  &nbsp; 
+            <a href="#" class="button button-medium button-m7">Medium Button</a>
+             &nbsp;  &nbsp;  &nbsp; 
+            <a href="#" class="button button-medium button-m1">Medium Button</a>
+            <br/>
+            <a href="#" class="button button-medium button-type2 button-m1">Medium Button</a>
+             &nbsp;  &nbsp;  &nbsp; 
+            <a href="#" class="button button-medium button-type2 button-m2">Medium Button</a>
+             &nbsp;  &nbsp;  &nbsp; 
+            <a href="#" class="button button-medium button-type2 button-m3">Medium Button</a>
+             &nbsp;  &nbsp;  &nbsp; 
+            <a href="#" class="button button-medium button-type2 button-m4">Medium Button</a>
+            <br/><br/><br/>
+            <h1 class="styled">small Buttons</h1>
+            <a href="#" class="button button-small button-type1 button-m1">Small Button</a>
+             &nbsp;  &nbsp;  &nbsp; 
+            <a href="#" class="button button-small button-type1 button-m2">Small Button</a>
+             &nbsp;  &nbsp;  &nbsp; 
+            <a href="#" class="button button-small button-type1 button-m3">Small Button</a>
+             &nbsp;  &nbsp;  &nbsp; 
+            <a href="#" class="button button-small button-type1 button-m4">Small Button</a>
+            <br/>
+            <a href="#" class="button button-small button-m5">Small Button</a>
+             &nbsp;  &nbsp;  &nbsp; 
+            <a href="#" class="button button-small button-m6">Small Button</a>
+             &nbsp;  &nbsp;  &nbsp; 
+            <a href="#" class="button button-small button-m7">Small Button</a>
+             &nbsp;  &nbsp;  &nbsp; 
+            <a href="#" class="button button-small button-m1">Small Button</a>
+            <br/>
+            <a href="#" class="button button-small button-type2 button-m1">Small Button</a>
+             &nbsp;  &nbsp;  &nbsp; 
+            <a href="#" class="button button-small button-type2 button-m2">Small Button</a>
+             &nbsp;  &nbsp;  &nbsp; 
+            <a href="#" class="button button-small button-type2 button-m3">Small Button</a>
+             &nbsp;  &nbsp;  &nbsp; 
+            <a href="#" class="button button-small button-type2 button-m4">Small Button</a>
+            <br/><br/><br/>
+            <h1 class="styled">Alert Messages</h1>  
+            <div class="row">  
+                <div class="col-md-6">               
+                    <div class="alert-box alert-normal alert">
+                        <button type="button" class="close" data-dismiss="alert">x</button>
+                        <p>Normal Message! Your Message Here</p>
+                    </div>
+                    <div class="alert-box alert-warning alert">
+                        <button type="button" class="close" data-dismiss="alert">x</button>
+                        <p>Warning Messages! Your Message Here</p>
+                    </div>
+                    <div class="alert-box alert-information alert">
+                        <button type="button" class="close" data-dismiss="alert">x</button>
+                        <p>Information Frequently Asked Questions! Your Message Here</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="alert-box alert-succes alert">
+                        <button type="button" class="close" data-dismiss="alert">x</button>
+                        <p>Success Message! Your Message Here</p>
+                    </div>
+                    <div class="alert-box alert-useful alert">
+                        <button type="button" class="close" data-dismiss="alert">x</button>
+                        <p>Useful Information! Your Message Here</p>
+                    </div>
+                    <div class="alert-box alert-custom alert">
+                        <button type="button" class="close" data-dismiss="alert">x</button>
+                        <p>Custom Message! Your Message Here</p>
+                    </div>
+                </div>
+            </div>
+            <br/><br/><br/>
+            <h1 class="styled">Tabs, slider and accordion</h1>  
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="tab-widget">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#tab-1" class="d-text-c-h" data-toggle="tab">Popular Posts</a></li>
+                            <li><a href="#tab-2" class="d-text-c-h" data-toggle="tab">Recent Posts</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane fade in active" id="tab-1">
+                                <div class="mini-post">
+                                    <div class="mini-post-cover"><a href="#"><img src="images/photos/lesson-1.jpg" alt="mini blog" /></a></div>
+                                    <h3><a href="#" class="d-text-c">Going to the Next level</a></h3>
+                                    <h6>5 days ago</h6>
+                                    <p>A wonderful serenity has taken possession of my entire soul,  like these sweet mornings...</p>
+                                </div>
+                                <div class="mini-post">
+                                    <div class="mini-post-cover"><a href="#"><img src="images/photos/lesson-4.jpg" alt="mini blog" /></a></div>
+                                    <h3><a href="#" class="d-text-c">Live like a god</a></h3>
+                                    <h6>5 days ago</h6>
+                                    <p>A wonderful serenity has taken possession of my entire soul,  like these sweet mornings...</p>
+                                </div>
+                          </div>
+                          <div class="tab-pane fade" id="tab-2">
+                                <div class="mini-post">
+                                    <div class="mini-post-cover"><a href="#"><img src="images/photos/lesson-2.jpg" alt="mini blog" /></a></div>
+                                    <h3><a href="#" class="d-text-c">Going to the Next level</a></h3>
+                                    <h6>5 days ago</h6>
+                                    <p>A wonderful serenity has taken possession of my entire soul,  like these sweet mornings...</p>
+                                </div>
+
+                                <div class="mini-post">
+                                    <div class="mini-post-cover"><a href="#"><img src="images/photos/lesson-3.jpg" alt="mini blog" /></a></div>
+                                    <h3><a class="d-text-c" href="#">Going to the Next level</a></h3>
+                                    <h6>5 days ago</h6>
+                                    <p>A wonderful serenity has taken possession of my entire soul,  like these sweet mornings...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <!-- === START SLIDER SECTION === -->
+                        <section class="slider-section" id="slider-section">
+                            <div class="slider" data-tesla-plugin="slider" data-tesla-item=".slide" data-tesla-next=".slide-right" data-tesla-prev=".slide-left" data-tesla-container=".slide-wrapper">
+                                <ul class="slider-arrows">
+                                    <li class="slide-left"><i class="fa fa-chevron-left"></i></li>
+                                    <li class="slide-right"><i class="fa fa-chevron-right"></i></li>
+                                </ul>
+
+                                <ul class="slide-wrapper">
+                                    <li class="slide">
+                                        <img src="images/slider/slide-1.jpg" alt="slide">
+                                    </li>
+                                    <li class="slide">
+                                        <img src="images/slider/slide-2.jpg" alt="slide">
+                                    </li>
+                                    <li class="slide">
+                                        <img src="images/slider/slide-3.jpg" alt="slide">
+                                    </li>
+                                </ul>
+
+                                <ul class="slider-dots" data-tesla-plugin="bullets">
+                                    <li class="d-bg-c-h d-border-c-h"></li>
+                                    <li class="d-bg-c-h d-border-c-h"></li>
+                                    <li class="d-bg-c-h d-border-c-h"></li>
+                                </ul>
+                            </div>
+                        </section>
+                    <!-- === END SLIDER SECTION === -->
+                   
+                    <div class="panel-group" id="accordion">
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collaps-1">
+                              I want to ask you a question?
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="collaps-1" class="panel-collapse collapse in">
+                          <div class="panel-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collaps-2">
+                              I will ask another one if you let me?
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="collaps-2" class="panel-collapse collapse">
+                          <div class="panel-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collaps-3">
+                              How about a third question if i may?
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="collaps-3" class="panel-collapse collapse">
+                          <div class="panel-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                          </div>
+                        </div>
+                      </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collaps-4">
+                              Last question i promise ok?
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="collaps-4" class="panel-collapse collapse">
+                          <div class="panel-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collaps-5">
+                              Told you it was the last one!
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="collaps-5" class="panel-collapse collapse">
+                          <div class="panel-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <br/><br/><br/>
+            <h1 class="styled">Carousel</h1>
+                <div class="our-clients-logo" data-tesla-plugin="carousel" data-tesla-container=".tesla-carousel-items" data-tesla-item="&gt;div" data-tesla-rotate="false" data-tesla-autoplay="false" data-tesla-hide-effect="false">
+                    <div class="our-partners-arrows">
+                        <span class="next"><i class="fa fa-chevron-right s-text-c-h s-border-c-h"></i></span>
+                        <span class="prev disabled"><i class="fa fa-chevron-left s-text-c-h s-border-c-h"></i></span>
+                    </div>
+                    <div class="row tesla-carousel-items">
+                        <div class="col-md-2 col-xs-4">
+                            <a href="#"><img src="images/photos/trainer-1.jpg" alt="partner image" /></a>
+                        </div>
+                        <div class="col-md-2 col-xs-4">
+                            <a href="#"><img src="images/photos/trainer-2.jpg" alt="partner image" /></a>
+                        </div>
+                        <div class="col-md-2 col-xs-4">
+                            <a href="#"><img src="images/photos/trainer-3.jpg" alt="partner image" /></a>
+                        </div>
+                        <div class="col-md-2 col-xs-4">
+                            <a href="#"><img src="images/photos/trainer-4.jpg" alt="partner image" /></a>
+                        </div>
+                        <div class="col-md-2 col-xs-4">
+                            <a href="#"><img src="images/photos/trainer-1.jpg" alt="partner image" /></a>
+                        </div>
+                        <div class="col-md-2 col-xs-4">
+                            <a href="#"><img src="images/photos/trainer-2.jpg" alt="partner image" /></a>
+                        </div>
+                        <div class="col-md-2 col-xs-4">
+                            <a href="#"><img src="images/photos/trainer-3.jpg" alt="partner image" /></a>
+                        </div>
+                        <div class="col-md-2 col-xs-4">
+                            <a href="#"><img src="images/photos/trainer-4.jpg" alt="partner image" /></a>
+                        </div>
+                        <div class="col-md-2 col-xs-4">
+                            <a href="#"><img src="images/photos/trainer-1.jpg" alt="partner image" /></a>
+                        </div>
+                        <div class="col-md-2 col-xs-4">
+                            <a href="#"><img src="images/photos/trainer-2.jpg" alt="partner image" /></a>
+                        </div>
+                    </div>
+                </div>
+
+                <br/><br/><br/>
+                <h1 class="styled">Pricing Tables</h1>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="pricing-table">
+                            <div class="pricing-table-name">Silver</div>
+                            <ul class="pricing-table-stuff">
+                                <li><span>Full</span> Email Support</li>
+                                <li><span>25GB</span> of Storage</li>
+                                <li><span>5</span> Domains Name</li>
+                                <li><span>10</span> Email Addresses</li>
+                            </ul>
+                            <div class="pricing-table-price"><span>$</span>25</div>
+                            <p>per month</p>
+                            <p><a href="#" class="button button-medium d-bg-c">Buy now</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="pricing-table">
+                            <div class="pricing-table-name">Gold</div>
+                            <ul class="pricing-table-stuff">
+                                <li><span>Full</span> Email Support</li>
+                                <li><span>50GB</span> of Storage</li>
+                                <li><span>10</span> Domains Name</li>
+                                <li><span>20</span> Email Addresses</li>
+                            </ul>
+                            <div class="pricing-table-price"><span>$</span>50</div>
+                            <p>per month</p>
+                            <p><a href="#" class="button button-medium d-bg-c">Buy now</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="pricing-table">
+                            <div class="pricing-table-name">Platium</div>
+                            <ul class="pricing-table-stuff">
+                                <li><span>Full</span> Email Support</li>
+                                <li><span>100GB</span> of Storage</li>
+                                <li><span>15</span> Domains Name</li>
+                                <li><span>30</span> Email Addresses</li>
+                            </ul>
+                            <div class="pricing-table-price"><span>$</span>99</div>
+                            <p>per month</p>
+                            <p><a href="#" class="button button-medium d-bg-c">Buy now</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <br/><br/><br/>
+                <h1 class="styled">Testimonials</h1>
+                    <div class="testimonials-slider" data-tesla-plugin="slider" data-tesla-item=".testimonial" data-tesla-next=".slide-right" data-tesla-prev=".slide-left" data-tesla-container=".testimonials-wrapper">
+                        <ul class="testimonials-arrows">
+                            <li class="slide-left"><i class="fa fa-chevron-left d-text-c-h"></i></li>
+                            <li class="slide-right"><i class="fa fa-chevron-right d-text-c-h"></i></li>
+                        </ul>
+                        <ul class="testimonials-wrapper">
+                            <li class="testimonial">
+                                <div class="testimonial-cover">                                    
+                                    <img src="images/photos/trainer-1.jpg" alt="testimonial avatar">
+                                </div>
+                                <div class="testimonial-content">
+                                    <h2 class="d-text-c">Those amazing people...</h2>
+                                    <p>‘But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.”</p>
+                                    <h3>PETRA MURRAY, <span>Nature &amp; Health</span></h3>
+                                </div>
+                            </li>
+                            <li class="testimonial">
+                                <div class="testimonial-cover">
+                                    <img src="images/photos/trainer-2.jpg" alt="testimonial avatar">
+                                </div>
+                                <div class="testimonial-content">
+                                    <h2 class="d-text-c">So much to do...</h2>
+                                    <p>‘But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.”</p>
+                                    <h3>Alisa Newer, <span>Houses &amp; Water</span></h3>
+                                </div>
+                            </li>
+                            <li class="testimonial">
+                                <div class="testimonial-cover">
+                                    <img src="images/photos/trainer-3.jpg" alt="testimonial avatar">
+                                </div>
+                                <div class="testimonial-content">
+                                    <h2 class="d-text-c">Help is needed...</h2>
+                                    <p>‘But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.”</p>
+                                    <h3>John Doe MURRAY, <span>Children &amp; Teaching</span></h3>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="testimonials-dots" data-tesla-plugin="bullets">
+                            <li><i class="fa fa-heart d-text-c-h"></i></li>
+                            <li><i class="fa fa-heart d-text-c-h"></i></li>
+                            <li><i class="fa fa-heart d-text-c-h"></i></li>
+                        </ul>
+                    </div>
+
+            </div>
+
+                    <!-- === START INFO === -->
+        <div class="parallax parallax-4">
+            <div class="black-bg padding">
+                <div class="container">
+                    <h2>NEW CARDIO CLASSES THIS SUMMER. PAY NOW AND GET 25% DISCOUNT</h2>
+                    <h4>If you like our theme don’t forget to rate it with 5 stars</h4>
+                    <br>
+                    <a href="#" class="button-1 d-bg-c d-text-c-h d-border-c bold">read more</a>  &nbsp; &nbsp; &nbsp; <a href="#" class="button-3 d-bg-c-h d-border-c-h bold">purchase now</a>
+                </div>
+            </div>
+        </div>
+        <!-- === END INFO === -->
+
+        </div>
+        <!-- === END CONTENT === -->
+
+
+
+
+        <!-- === START FOOTER === -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6"><p>© Copyright 2014 by GeoThemes. All rights reserved.</p></div>
+                    <div class="col-md-6">
+                        <ul class="social">
+                            <li><a href="#" class="d-bg-c-h"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" class="d-bg-c-h"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#" class="d-bg-c-h"><i class="fa fa-pinterest"></i></a></li>
+                            <li><a href="#" class="d-bg-c-h"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#" class="d-bg-c-h"><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href="#" class="d-bg-c-h"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#" class="d-bg-c-h"><i class="fa fa-rss"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- === END FOOTER === -->
+
+        </div>
+
+        <!-- =========================== START SCRIPTS ========================== -->
+        <script src="js/modernizr.custom.63321.js" type="text/javascript"></script>
+        <script src="js/jquery-1.10.0.min.js" type="text/javascript"></script>
+        <script src="js/jquery-ui.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.js" type="text/javascript"></script>
+        <script src="js/placeholder.js" type="text/javascript"></script>
+        <script src="js/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+        <script src="js/masonry.pkgd.js" type="text/javascript"></script>
+        <script src="js/jquery.swipebox.min.js" type="text/javascript"></script>
+        <script src="js/options.js" type="text/javascript"></script>
+        <script src="js/plugins.js" type="text/javascript"></script>
+        <script src="color-box/color-js.js" type="text/javascript"></script>
+        <script src="color-box/farbtastic/farbtastic.js" type="text/javascript"></script>
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+        <!-- =========================== END SCRIPTS ========================== -->
+    </body>
+</html>

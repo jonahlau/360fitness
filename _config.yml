@@ -1,0 +1,11 @@
+name: "360 Fitness"
+description: "360 Fitness - Premier fitness studio in Central, Hong Kong"
+
+url: "localhost:4000"
+
+paginate: 10
+
+markdown: rdiscount
+permalink: pretty
+
+layout: default
