@@ -1,0 +1,33 @@
+HerculesTheme
+
+Update: 29.10.2014 - Hercules v.1.5
+Fixed: Responsive slider arrows positioning
+Fixed: Last menu item is visibile in low resolutions
+Added: Login / Register Page
+One-page and Multi-page merged in one
+
+Update: 20.10.2014 - Hercules v.1.4
+Added in multi-page version 3 more pages:
+1 Shop page
+2 Single Product
+3 Cart page
+
+Update: 09.10.2014 - Hercules v.1.3
+Fix - Gallery slides
+
+Update: 23.08.2014 - Hercules v.1.1
+Fix - contact-form
+Fix - slider's slide position
+
+Update: 22.08.2014 - Hercules v.1.1
+Added in multi-page + 8 new pages:
+1 Blog 2 columns left sidebar
+2 Blog 2 columns right sidebar
+3 Blog 3 columns left sidebar
+4 Error-404 Page
+5 Gallery 2 columns
+6 Gallery 3 columns
+7 Gallery 4 columns
+8 Shortcodes page
+
+Created: 18.07.2014

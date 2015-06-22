@@ -223,26 +223,26 @@ a {
 	line-height: 1.5em;
 }
 .parallax-1 {
-	background: url("../images/photos/parallax-1.jpg") top center;
+	background: url("/img/photos/parallax-1.jpg") top center;
 }
 .parallax-2 {
-	background: url("../images/photos/parallax-2.jpg") top center;
+	background: url("/img/images/photos/parallax-2.jpg") top center;
 }
 .parallax-3 {
-	background: url("../images/photos/parallax-3.jpg") top center;
+	background: url("/img/photos/parallax-3.jpg") top center;
 }
 .parallax-4 {
-	background: url("../images/photos/parallax-4.jpg") top center;
+	background: url("/img/slide-2.jpg") top center;
 }
 .parallax-5 {
-	background: url("../images/photos/parallax-5.jpg") top center;
+	background: url("/img/photos/parallax-5.jpg") top center;
 }
 .black-bg {
 	background: rgba(0,0,0,0.8);
 }
-.padding {
-	padding: 80px 0;
-}
+/*.padding {*/
+	/*padding: 80px 0;*/
+/*}*/
 .twitter_widget {
 	margin-bottom: 40px;
 }
@@ -319,7 +319,7 @@ header .menu ul li ul li {
 	display: block;
 	text-align: left;
 	padding: 0 0 5px 0;
-	margin: 0 0 5px 0; 
+	margin: 0 0 5px 0;
 	border-bottom: 1px dotted #ddd;
 }
 header .menu ul li ul li:last-child {
@@ -390,7 +390,7 @@ footer {
 }
 footer p {
 	margin: 0;
-	font-size: 13px; 
+	font-size: 13px;
 	padding-top: 8px;
 }
 footer .social {
@@ -453,9 +453,9 @@ footer .social {
 /* SIDEBAR
    ========================================================================== */
 .place-info {
-	padding: 40px; 
+	padding: 40px;
 	color: #fff;
-	margin-bottom: 20px;
+	/*margin-bottom: 20px;*/
 }
 .place-info .place-info-box {
 	border-right: 3px solid #fff;
@@ -596,7 +596,7 @@ footer .social {
 /* SEPARATOR INFO
    ========================================================================== */
 .separator-info {
-	padding: 60px 0;
+	padding: 40px 0;
 }
 .separator-info h3 {
 	font-size: 30px;
@@ -637,7 +637,7 @@ footer .social {
 	margin: auto;
 	top: 0;
 	bottom: 0;
-} 
+}
 .lessons .lessons-arrows .next {
 	position: absolute;
 	right: 0;
@@ -712,6 +712,8 @@ footer .social {
 	padding: 50px;
 	top: 0;
 }
+
+
 .contact-form
  input::-moz-placeholder,
 .contact-form
@@ -899,7 +901,7 @@ footer .social {
 	margin-bottom: 20px;
 }
 .widget .testimonials .counting {
-	text-align: left; 
+	text-align: left;
 	display: block;
 	height: 20px;
 }
@@ -985,9 +987,43 @@ footer .social {
 	margin: 0;
 }
 
+.navbar-default {
+	margin-bottom: 0;
+	background: transparent;
+	border-color: transparent;
+}
 
 
+.container-fluid {
+	padding-left: 0;
+	padding-right: 0;
+}
 
+.navbar-brand {
+	height: 110px;
+	width: auto;
+}
+
+.navbar-brand img {
+	height: 100%;
+}
+
+.navbar-toggle {
+	margin-top: 40px;
+}
+
+.navbar-right {
+	padding-top: 30px;
+	color: #000;
+}
+
+.navbar-item {
+	text-transform: uppercase;
+	font-size: 14px;
+	cursor: pointer;
+	font-weight: 700
+	color:
+}
 
 /* APPLICATION
    ========================================================================== */
@@ -1421,8 +1457,8 @@ footer .social {
 	margin-top: -20px;
 	cursor: pointer;
 	padding-top: 16px;
-	font-size: 20px;
-	background: rgba(0,0,0,0.4);
+	font-size: 1.8em;
+	background: transparent;
 	color: #fff;
 	height: 50px;
 }
@@ -1665,7 +1701,7 @@ footer .social {
 	cursor: pointer;
 	*zoom: 1;
 	*display: inline;
-	border-radius: 3px; 
+	border-radius: 3px;
 	color: #fff;
 	background: rgba(0,0,0,0.1);
 	color: rgba(255,255,255,0.3);
@@ -1745,7 +1781,7 @@ footer .social {
 	width: 28px;
 	height: 28px;
 	font-size: 17px;
-} 
+}
 .team-section .team-member .team-member-details .social li a:hover {
 	border: 1px solid #f9690e;
 }
@@ -1877,7 +1913,7 @@ footer .social {
 	margin-bottom: 20px;
 }
 .blog-entry .entry-cotent p {
-	line-height: 1.7em;	
+	line-height: 1.7em;
 }
 .blog-entry .entry-footer ul li {
 	display: inline-block;
@@ -2207,7 +2243,7 @@ footer .social {
 	position: relative;
 	text-align: center;
 	font-size: 22px;
-	padding-top: 8px;	
+	padding-top: 8px;
 	border: 1px solid #abaaaa;
 }
 .ul-features li span i {
@@ -2257,7 +2293,7 @@ footer .social {
 		display: none;
 	}
 }
-@media (min-width: 768px) and (max-width: 992px) { }	
+@media (min-width: 768px) and (max-width: 992px) { }
 @media (max-width: 1300px) {
 	.slider .slide-text {
 		margin-top: 100px;
@@ -2282,7 +2318,7 @@ footer .social {
 		display: block;
 		margin: 0;
 		border: 0;
-		padding: 0 0 0 10px; 
+		padding: 0 0 0 10px;
 	}
 	header .menu ul li ul li {
 		border: 0;
@@ -2335,9 +2371,9 @@ footer .social {
 	header .menu ul li a,
 	header .menu ul li {
 		color: #252525;
-		margin: 0; 
+		margin: 0;
 		padding: 0;
-		text-align: left; 
+		text-align: left;
 		display: block;
 	}
 	header .menu ul li a {
@@ -2857,7 +2893,7 @@ footer .social {
 	margin-bottom: 30px;
 	color: #999;
 	font-size: 27px;
-	border-bottom: 1px dotted #ccc; 
+	border-bottom: 1px dotted #ccc;
 	padding-bottom: 10px;
 }
 
@@ -2914,7 +2950,7 @@ footer .social {
 	padding-top: 6px;
 	line-height: 1.5em;
 	cursor: pointer;
-	border-radius: 6px; 
+	border-radius: 6px;
 	margin: -25px auto 0;
 }
 .our-works-portfolio .our-works-item .works-item-cover i:hover {
@@ -2962,7 +2998,7 @@ footer .social {
 }
 .error-404-section .widget-search-form {
 	margin: 0 auto 30px;
-	max-width: 300px; 
+	max-width: 300px;
 }
 
 .widget-search-form {
@@ -3652,3 +3688,61 @@ footer .social {
     margin-top: -5px;
 }
 /* =========================== END SHOP SECTION ===================== */
+
+/* =========================== CUSTOM CSS =========================== */
+
+.map-location .contact-form {
+	padding-top: 25px
+}
+
+.map-location .contact-form h3
+{
+	color: #fff;
+	padding-bottom: 10px;
+}
+
+
+.map-location .contact-form i
+{
+	color: #fff; !important;
+	padding-bottom: 10px; !important;
+	margin-right: 10px;
+}
+
+
+.map-location .contact-form div
+{
+	color: #fff; !important;
+}
+
+.transparent-container {
+	background-color: #f9690e;
+	padding: 1.5%;
+}
+
+footer {
+	background-color: rgba(0,0,0,0.8);
+}
+
+.white-bg {
+	background-color: #fff;
+}
+
+.class-item {
+	background: url('/img/lesson-1.jpg') top center;
+	background-size: cover;
+	height: 300px;
+	display: table;
+	border: 15px solid #ffffff;
+	border-top: 0;
+}
+
+.class-item-content {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.classes-section {
+	padding: 1.5%;
+}
