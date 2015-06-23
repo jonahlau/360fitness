@@ -2292,11 +2292,12 @@ footer .social {
 	.slider .slide-text h2 {
 		display: none;
 	}
+	body { padding-top: 110px; }
 }
 @media (min-width: 768px) and (max-width: 992px) { }
 @media (max-width: 1300px) {
 	.slider .slide-text {
-		margin-top: 100px;
+		margin-top: 110px;
 	}
 	.main-slider-under {
 		margin-top: -100px;
@@ -2304,8 +2305,10 @@ footer .social {
 	.main-slider .counting {
 		margin-bottom: 20px;
 	}
+	body { padding-top: 110px; }
 }
 @media (max-width: 991px) {
+	body { padding-top: 110px; }
 	.place-info .place-info-box {
 		margin-bottom: 30px;
 		border-right: 0 solid #fff;
@@ -2432,6 +2435,7 @@ footer .social {
 	}
 }
 @media (min-width: 992px) {
+	body { padding-top: 120px; }
 	.menu>ul {
 		display: block !important;
 	}
@@ -3775,8 +3779,15 @@ footer {
 }
 
 .headroom--unpinned {
-	top: -100px;
+	top: -120px;
 }
 .headroom--pinned {
 	top: 0;
 }
+
+.bottom-header {
+	border-top: 4px solid #f9690e;
+	background-color: #fff;
+}
+
+@media (min-width: 981px) { body { padding-top: 100px; } }
