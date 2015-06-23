@@ -232,17 +232,19 @@ a {
 	background: url("/img/photos/parallax-3.jpg") top center;
 }
 .parallax-4 {
-	background: url("/img/slide-2.jpg") top center;
+	background: url("/img/slide-2.jpg") top center fixed;
+	background-size: cover;
 }
 .parallax-5 {
-	background: url("/img/photos/parallax-5.jpg") top center;
+	background: url("/img/TRX-Rip-Trainer-5.jpg") top center no-repeat fixed;
+	background-size: cover;
 }
 .black-bg {
 	background: rgba(0,0,0,0.8);
 }
-/*.padding {*/
-	/*padding: 80px 0;*/
-/*}*/
+.padding {
+	padding: 80px 0;
+}
 .twitter_widget {
 	margin-bottom: 40px;
 }
@@ -642,9 +644,8 @@ footer .social {
 	position: absolute;
 	right: 0;
 	top: 0;
-	background: rgba(0,0,0,0.3);
-	color: #fff;
-	font-size: 16px;
+	color: rgba(0,0,0,0.5);
+	font-size: 2em;
 	padding-top: 19px;
 	line-height: 1em;
 	text-align: center;
@@ -657,9 +658,8 @@ footer .social {
 	position: absolute;
 	left: 0;
 	top: 0;
-	background: rgba(0,0,0,0.3);
-	color: #fff;
-	font-size: 16px;
+	color: rgba(0,0,0,0.5);
+	font-size: 2em;
 	padding-top: 19px;
 	line-height: 1em;
 	text-align: center;
@@ -670,7 +670,7 @@ footer .social {
 }
 .lessons .lessons-arrows .prev:hover,
 .lessons .lessons-arrows .next:hover {
-	background: rgba(0,0,0,0.7);
+	color: rgba(0,0,0,0.8)
 }
 .lessons .lesson img {
 	margin-bottom: 20px;
@@ -1457,7 +1457,7 @@ footer .social {
 	margin-top: -20px;
 	cursor: pointer;
 	padding-top: 16px;
-	font-size: 1.8em;
+	font-size: 2em;
 	background: transparent;
 	color: #fff;
 	height: 50px;
@@ -3691,9 +3691,9 @@ footer .social {
 
 /* =========================== CUSTOM CSS =========================== */
 
-.map-location .contact-form {
-	padding-top: 25px
-}
+/*.map-location .contact-form {*/
+	/*padding-top: 25px*/
+/*}*/
 
 .map-location .contact-form h3
 {
@@ -3729,20 +3729,39 @@ footer {
 }
 
 .class-item {
-	background: url('/img/lesson-1.jpg') top center;
 	background-size: cover;
 	height: 300px;
 	display: table;
-	border: 15px solid #ffffff;
+	/*border: 15px solid #ffffff;*/
 	border-top: 0;
+	padding: 0;
 }
 
 .class-item-content {
 	display: table-cell;
 	vertical-align: middle;
 	text-align: center;
+	padding:0;
+	height: 100%;
+	width: 100%;
 }
 
 .classes-section {
 	padding: 1.5%;
 }
+
+.classes-description {
+	color: #fff;
+	font-size: 13px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.no-border {
+	border: 0;
+}
+
+.classes-logo {
+	height: 25%;
+}
+
