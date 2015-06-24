@@ -216,25 +216,25 @@ body.animated_change *{
 .testimonials-slider .testimonials-dots li.active i,
 header .menu ul li.active>a,
 .d-text-c {
-    color: #f9690e !important;
+    color: #f58220 !important;
 }
 .slider .counting li.active,
 .d-bg-c.active,
 .d-bg-c-a.active,
 .d-bg-c-h:hover,
 .d-bg-c {
-    background: #f9690e !important;
+    background: #f58220 !important;
 }
 .d-border-c.active,
 .d-border-c-a.active,
 .d-border-c-h:hover,
 .d-border-c {
-    border-color: #f9690e !important;
+    border-color: #f58220 !important;
 }
 
 .rombust:before {
-    border-bottom: 12px solid #f9690e;
+    border-bottom: 12px solid #f58220;
 }
 .rombust:after {
-    border-top: 12px solid #f9690e;
+    border-top: 12px solid #f58220;
 }

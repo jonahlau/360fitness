@@ -1,7 +1,8 @@
 name: "360 Fitness"
 description: "360 Fitness - Premier fitness studio in Central, Hong Kong"
-
+author: "360 Fitness"
 url: "localhost:4000"
+google_maps_url: "https://www.google.com/maps/embed/v1/place?q=%205%2FF%20Wing%20Yee%20Commercial%20Building%2C%205%20Wing%20Kut%20Street%2C%20Central&key=AIzaSyDSHso5Dp1I98iDm6crpS9Qk4i8t73qVaI"
 
 paginate: 10
 

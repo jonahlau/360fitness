@@ -14,7 +14,7 @@ layout: default
                 <div class="slide-text">
                     <h1>discover the hidden <span>alter ego</span><br/> of your body</h1>
                     <h2>Unleash your fears, free your mind, feel your body</h2>
-                    <a href="#" class="button-1 d-bg-c d-text-c-h d-border-c">read more</a>
+                    <!--<a href="#" class="button-1 d-bg-c d-text-c-h d-border-c">read more</a>-->
                 </div>
                 <img src="{{ sliderImage }}" alt="slide">
             </li>
@@ -32,7 +32,7 @@ layout: default
 <!--ICON BAR-->
 <div>
     <div class="transparent-container">
-        <div class="place-info d-bg-c container">
+        <div class="place-info d-bg-c container" style="background-color: transparent !important;">
             <div class="row">
                 <div class="col-md-4 col-sm-6 col-xs-12">
                     <div class="place-info-box">
@@ -155,84 +155,26 @@ layout: default
     </div>
     <div class="container">
         <div class="row tesla-carousel-items">
-            <div class="col-md-4 col-xs-12">
-                <div class="trainer">
-                    <div class="trainer-class d-border-c d-text-c">Boxing</div>
-                    <div class="trainer-hover">
-                        <h5 class="d-text-c">John Snape</h5>
-                        <ul>
-                            <li><i class="d-text-c fa fa-trophy"></i> 7 International Awards</li>
-                            <li><i class="d-text-c fa fa-bolt"></i> 5 Years of Experience</li>
-                        </ul>
+
+            {% for trainer in site.data.trainer_bios %}
+                <div class="col-md-4 col-xs-12">
+                    <div class="trainer">
+                        <div class="trainer-class d-border-c d-text-c">{{ trainer.specialty }}</div>
+                        <a href="" data-toggle="modal" data-target="#{{ trainer.id }}">
+                            <div class="trainer-hover">
+                                <h5 class="d-text-c">{{ trainer.name }}</h5>
+                                <ul style="text-align:center">
+                                    {% for bullet in trainer.overview_bullets %}
+                                    <li style="font-size: 11px; padding: 0 10px;"><i class="d-text-c fa fa-star"></i> {{ bullet }}</li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </a>
+                        <img src="{{ trainer.profile_photo_src }}" alt="trainer" />
                     </div>
-                    <img src="img/photos/trainer-1.jpg" alt="trainer" />
                 </div>
-            </div>
-            <div class="col-md-4 col-xs-12">
-                <div class="trainer">
-                    <div class="trainer-class d-border-c d-text-c">Fitness</div>
-                    <div class="trainer-hover">
-                        <h5 class="d-text-c">Alias Wurst</h5>
-                        <ul>
-                            <li><i class="d-text-c fa fa-trophy"></i> 7 International Awards</li>
-                            <li><i class="d-text-c fa fa-bolt"></i> 5 Years of Experience</li>
-                        </ul>
-                    </div>
-                    <img src="img/photos/trainer-2.jpg" alt="trainer" />
-                </div>
-            </div>
-            <div class="col-md-4 col-xs-12">
-                <div class="trainer">
-                    <div class="trainer-class d-border-c d-text-c">Sport</div>
-                    <div class="trainer-hover">
-                        <h5 class="d-text-c">Max Trapon</h5>
-                        <ul>
-                            <li><i class="d-text-c fa fa-trophy"></i> 7 International Awards</li>
-                            <li><i class="d-text-c fa fa-bolt"></i> 5 Years of Experience</li>
-                        </ul>
-                    </div>
-                    <img src="img/photos/trainer-3.jpg" alt="trainer" />
-                </div>
-            </div>
-            <div class="col-md-4 col-xs-12">
-                <div class="trainer">
-                    <div class="trainer-class d-border-c d-text-c">Pilates</div>
-                    <div class="trainer-hover">
-                        <h5 class="d-text-c">John Snape</h5>
-                        <ul>
-                            <li><i class="d-text-c fa fa-trophy"></i> 7 International Awards</li>
-                            <li><i class="d-text-c fa fa-bolt"></i> 5 Years of Experience</li>
-                        </ul>
-                    </div>
-                    <img src="img/photos/trainer-4.jpg" alt="trainer" />
-                </div>
-            </div>
-            <div class="col-md-4 col-xs-12">
-                <div class="trainer">
-                    <div class="trainer-class d-border-c d-text-c">Boxing</div>
-                    <div class="trainer-hover">
-                        <h5 class="d-text-c">John Snape</h5>
-                        <ul>
-                            <li><i class="d-text-c fa fa-trophy"></i> 7 International Awards</li>
-                            <li><i class="d-text-c fa fa-bolt"></i> 5 Years of Experience</li>
-                        </ul>
-                    </div>
-                    <img src="img/photos/trainer-1.jpg" alt="trainer" />
-                </div>
-            </div>
-            <div class="col-md-4 col-xs-12">
-                <div class="trainer">
-                    <div class="trainer-class d-border-c d-text-c">Swiming</div>
-                    <div class="trainer-hover">
-                        <h5 class="d-text-c">John Snape</h5>
-                        <ul>
-                            <li><i class="d-text-c fa fa-trophy"></i> 7 International Awards</li>
-                            <li><i class="d-text-c fa fa-bolt"></i> 5 Years of Experience</li>
-                        </ul>
-                    </div>
-                    <img src="img/photos/trainer-2.jpg" alt="trainer" />
-                </div>
-            </div>
+            {% endfor %}
+
         </div>
     </div>
 </div>
@@ -285,7 +227,7 @@ layout: default
 <!-- MAP -->
 <div class="map-location">
     <div class="container">
-        <form class="d-bg-c contact-form">
+        <form class="d-bg-c contact-form" style="background: rgba(245, 130, 29, 0.90) !important;">
             <div>
                 <div><i class="fa fa-phone"></i> <span>{{ site.data.contact_details.telephone }}</span></div>
                 <div><i class="fa fa-calendar"></i><span>{{ site.data.contact_details.business_hours }}</span></div>
@@ -296,7 +238,44 @@ layout: default
             <input type="submit" value="Send" class="form-send button-2 bold d-text-c d-text-c-h">
         </form>
     </div>
-    <iframe src="https://www.google.com/maps/embed/v1/place?q=%205%2FF%20Wing%20Yee%20Commercial%20Building%2C%205%20Wing%20Kut%20Street%2C%20Central&key=AIzaSyDSHso5Dp1I98iDm6crpS9Qk4i8t73qVaI" width="600" height="450" frameborder="0" style="border:0"></iframe>
+    <iframe src="{{site.google_maps_url}}" width="600" height="450" frameborder="0" style="border:0"></iframe>
 </div>
 <!-- MAP -->
 
+<!--MODAL TEMPLATES -->
+
+{% for trainer in site.data.trainer_bios %}
+
+    <div class="modal fade" id="{{trainer.id}}" tabindex="-1" role="dialog" aria-labelledby="trainerBio" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <div class="separator-info" id="contact">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <h3 class="d-border-c" style="border-right: 0; border-left: #f9690e solid 6px; padding-left: 20px; text-align: left;">{{ trainer.name }}</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-5 col-xs-12 trainer-profile-pic-wrapper">
+                            <img class="trainer-profile-pic" src="{{trainer.profile_photo_src}}" alt="trainer" />
+                        </div>
+                        <div class="col-md-8 col-sm-7 col-xs-12 trainer-profile-contentbody">
+                            <p>{{ trainer.body }}</p>
+
+                            {% for bullet in trainer.bullets %}
+                                <p class="trainer-profile-wrapper"><i class="fa fa-star table-cell star-bullet"></i><span class="table-cell">{{ bullet }}</span></p>
+                            {% endfor %}
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endfor %}
