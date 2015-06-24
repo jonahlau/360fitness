@@ -19,19 +19,19 @@
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
-<header>
-    <div id="#home" class="top-header d-border-c">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <ul>
-                        <li><i class="fa fa-phone d-text-c"></i>+852 3488 8248</li>
-                        <li><i class="fa fa-calendar d-text-c"></i>Mon - Sat 9:00 am - 10:00 pm</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
+<header class="navbar-fixed-top">
+    <!--<div id="#home" class="top-header d-border-c">-->
+        <!--<div class="container">-->
+            <!--<div class="row">-->
+                <!--<div class="col-md-12">-->
+                    <!--<ul>-->
+                        <!--<li><i class="fa fa-phone d-text-c"></i>+852 3488 8248</li>-->
+                        <!--<li><i class="fa fa-calendar d-text-c"></i>Mon - Sat 9:00 am - 10:00 pm</li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
 
     <div class="bottom-header" id="home">
         <div class="container">
@@ -42,7 +42,7 @@
                             <i class="fa fa-align-justify"></i>
                         </button>
 
-                        <a class="navbar-brand" href="#"><img src="/img/360logo.jpg"></a>
+                        <a class="navbar-brand" href="#"><img src="/img/360-logo-hd.png"></a>
                     </div>
 
                     <div class="collapse navbar-collapse" id="navbar-collapse">
@@ -77,8 +77,7 @@
                     <h2>Unleash your fears, free your mind, feel your body</h2>
                     <a href="#" class="button-1 d-bg-c d-text-c-h d-border-c">read more</a>
                 </div>
-                
-                <img src="/img/slider/slide-1.jpg" alt="slide">
+                <img src="/img/slider_kyle.jpg" alt="slide">
             </li>
         
             <li class="slide">
@@ -87,8 +86,7 @@
                     <h2>Unleash your fears, free your mind, feel your body</h2>
                     <a href="#" class="button-1 d-bg-c d-text-c-h d-border-c">read more</a>
                 </div>
-                
-                <img src="/img/slider/slide-2.jpg" alt="slide">
+                <img src="/img/slider_panorama.jpg" alt="slide">
             </li>
         
             <li class="slide">
@@ -97,8 +95,7 @@
                     <h2>Unleash your fears, free your mind, feel your body</h2>
                     <a href="#" class="button-1 d-bg-c d-text-c-h d-border-c">read more</a>
                 </div>
-                
-                <img src="/img/slider/slide-3.jpg" alt="slide">
+                <img src="/img/slide-2.jpg" alt="slide">
             </li>
         
     </ul>
@@ -423,10 +420,21 @@
 <script src="/js/options.js" type="text/javascript"></script>
 <script src="/js/plugins.js" type="text/javascript"></script>
 <script src="/js/smooth-scroll.js" type="text/javascript"></script>
+<script src="/js/headroom.min.js" type="text/javascript"></script>
+
 
 <script>
     smoothScroll.init();
+    // grab an element
+    var myElement = document.querySelector(".navbar-fixed-top");
+    // construct an instance of Headroom, passing the element
+    var headroom  = new Headroom(myElement);
+    // initialise
+    headroom.init();
 </script>
+
+
+
 
 <script src="/color-box/color-js.js" type="text/javascript"></script>
 <script src="/color-box/farbtastic/farbtastic.js" type="text/javascript"></script>
