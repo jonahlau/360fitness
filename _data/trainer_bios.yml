@@ -1,6 +1,6 @@
 - id: "wilson"
   name: "Wilson Tam"
-  profile_photo_src: "img/photos/trainer-4.jpg"
+  profile_photo_src: "photos/trainer-4.jpg"
   specialty: "Fitness"
   body: "Certified Personal trainer by National Academy of Sports Medicine (NASM), Asian Academy for Sport and Fitness Professionals (AASFP) and PTA Global with more than 10 years of training experience with clients ranging all the way from age 5 to 75."
   bullets:
@@ -14,7 +14,7 @@
      - "More than 10 years' experience"
 - id: "calson"
   name: "Calson Leung"
-  profile_photo_src: "img/photos/trainer-4.jpg"
+  profile_photo_src: "photos/trainer-4.jpg"
   specialty: "Physio"
   body: "Calson is a registered physiotherapist specializes in musculoskeletal disorders and rehabilitative training with over 15 years of experience in private clinic and fitness industry."
   bullets:
@@ -28,7 +28,7 @@
      - "Movnat Certified Trainer (Level 1)"
 - id: "elaine"
   name: "Elaine To"
-  profile_photo_src: "img/photos/trainer-4.jpg"
+  profile_photo_src: "photos/trainer-4.jpg"
   specialty: "Fitness"
   body: "Elaine has been a personal trainer for more than 12 years, with strong background in  martial arts and sports including Brazilian Jiu Jitsu, Muay Thai, Capoeira, boxing, rock climbing and bouldering etc. She has been the champion of her weight class in Muay Thai and Brazilian Jiu Jitsu from 2011 until 2014."
   bullets:
@@ -45,7 +45,7 @@
      - "More than 12 years' experience"
 - id: "henry"
   name: "Henry Tong"
-  profile_photo_src: "img/photos/trainer-4.jpg"
+  profile_photo_src: "photos/trainer-4.jpg"
   specialty: "MMA"
   body: "Henry has devoted himself in Muay Thai & Martial Arts with more than 5 years of experience. He has had over 50 fight experiences including Brazilian Jiu Jitsu, Muay Thai, MMA,Sanshou,Boxing et and has been the champion of boxing, Sanshou and Muay thai in 2001, 2005, 2011, 2012"
   bullets:
@@ -60,7 +60,7 @@
      - "Over 5 years' experience"
 - id: "cindy"
   name: "Cindy Lee"
-  profile_photo_src: "img/photos/trainer-4.jpg"
+  profile_photo_src: "photos/trainer-4.jpg"
   specialty: "Fitness"
   body: "<strong>\"Your unique Fitness & Life Coach\"</strong> <br><br> Cindy runs both 1 on 1 and group classes currently, leading clients in breaking through limitations, goal setting, coaching them to discover their life's ultimate purpose, while motivating client’s ability to master physical as well as mental health, and unleash their full power from the inside out."
   bullets:

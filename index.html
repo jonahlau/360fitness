@@ -16,7 +16,7 @@ layout: default
                     <h2>Unleash your fears, free your mind, feel your body</h2>
                     <!--<a href="#" class="button-1 d-bg-c d-text-c-h d-border-c">read more</a>-->
                 </div>
-                <img src="{{ sliderImage }}" alt="slide">
+                {{ sliderImage | image }}
             </li>
         {% endfor %}
     </ul>
@@ -80,34 +80,34 @@ layout: default
 
 <div class="white-bg container">
     <div class="row trainers" style="padding-top:0;">
-        <div class="col-md-3 col-sm-6 col-xs-12 class-item" style="background: url('/img/TRX-Rip-Trainer-5.jpg') top center; background-size: cover;">
+        <div class="col-md-3 col-sm-6 col-xs-12 class-item" style="background: url({% asset_path TRX-Rip-Trainer-5.jpg %}) top center; background-size: cover;">
             <div class="class-item-content" style="background-color: rgba(40,43, 40, 0.7)">
-                <img class="classes-logo" src="img/trx_logo.png" style="margin-bottom: 30px">
+                {% image trx_logo.png class="classes-logo" style="margin-bottom: 30px" %}
 
                 <p class="classes-description">
                     To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it
                 </p>
             </div>
         </div>
-        <div class="col-md-3 col-sm-6 col-xs-12 class-item" style="background: url('/img/movnat_trees.jpg') top center; background-size: cover;">
+        <div class="col-md-3 col-sm-6 col-xs-12 class-item" style="background: url({% asset_path movnat_trees_reduced.jpg %}) top center; background-size: cover;">
             <div class="class-item-content" style="background-color: rgba(66,67, 66, 0.7)">
-                <img class="classes-logo" src="img/movnat_logo_black.png" style="margin-bottom: 30px">
+                {% image movnat_logo_black.png class="classes-logo" style="margin-bottom: 30px" %}
                 <p class="classes-description">
                     To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it
                 </p>
             </div>
         </div>
-        <div class="col-md-3 col-sm-6 col-xs-12 class-item" style="background: url('/img/fms.jpg') top center; background-size: cover;">
+        <div class="col-md-3 col-sm-6 col-xs-12 class-item" style="background: url({% asset_path fms.jpg %}) top center; background-size: cover;">
             <div class="class-item-content" style="background-color: rgba(47,50, 58, 0.7)">
-                <img class="classes-logo" src="img/fms_logo.png" style="margin-bottom: 30px">
+                {% image fms_logo.png class="classes-logo" style="margin-bottom: 30px" %}
                 <p class="classes-description">
                     To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it
                 </p>
             </div>
         </div>
-        <div class="col-md-3 col-sm-6 col-xs-12 class-item" style="background: url('/img/gravity_sys.jpg') top center; background-size: cover;">
+        <div class="col-md-3 col-sm-6 col-xs-12 class-item" style="background: url({% asset_path gravity_sys_reduced.jpg %}) top center; background-size: cover;">
             <div class="class-item-content" style="background-color: rgba(14,11, 8, 0.7)" style="margin-bottom: 30px">
-                <img class="classes-logo" src="img/gravity_logo_transparent.png" style="margin-bottom: 50px; width: 50%; height: auto;">
+                {% image gravity_logo_transparent.png class="classes-logo" style="margin-bottom: 50px; width: 50%; height: auto;" %}
                 <p class="classes-description">
                     To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it
                 </p>
@@ -119,7 +119,7 @@ layout: default
 <!--CLASSES SECTION-->
 
 <!-- PARALLAX -->
-<div class="parallax parallax-4">
+<div class="parallax parallax-4" style="background: url({% asset_path slide-2_reduced.jpg %}) top center fixed; ">
     <div class="black-bg padding" style="padding: 30px;">
         <div class="container">
             <h2>NEW CARDIO CLASSES THIS SUMMER. PAY NOW AND GET 25% DISCOUNT</h2>
@@ -170,7 +170,7 @@ layout: default
                                 </ul>
                             </div>
                         </a>
-                        <img src="{{ trainer.profile_photo_src }}" alt="trainer" />
+                        {{ trainer.profile_photo_src | image}}
                     </div>
                 </div>
             {% endfor %}
@@ -181,7 +181,7 @@ layout: default
 <!-- TRAINERS -->
 
 <!-- TESTIMONIALS -->
-<div class="parallax parallax-5 testimonials">
+<div class="parallax parallax-5 testimonials" style="background: url({% asset_path TRX-Rip-Trainer-5.jpg %}) top center no-repeat fixed; background-size: cover;">
     <div class="black-bg padding">
         <div class="container">
             <div class="testimonials-icon"><i class="d-bg-c fa fa-quote-right"></i></div>
@@ -262,7 +262,7 @@ layout: default
                     </div>
                     <div class="row">
                         <div class="col-md-4 col-sm-5 col-xs-12 trainer-profile-pic-wrapper">
-                            <img class="trainer-profile-pic" src="{{trainer.profile_photo_src}}" alt="trainer" />
+                            {{trainer.profile_photo_src | image }}
                         </div>
                         <div class="col-md-8 col-sm-7 col-xs-12 trainer-profile-contentbody">
                             <p>{{ trainer.body }}</p>
