@@ -119,7 +119,7 @@ layout: default
 <!--CLASSES SECTION-->
 
 <!-- PARALLAX -->
-<div class="parallax parallax-4" style="background: url({% asset_path slide-2_reduced.jpg %}) top center fixed; ">
+<div class="parallax parallax-4" style="background: url({% asset_path slide-2_reduced.jpg %}) top fixed no-repeat; background-size: cover;">
     <div class="black-bg padding" style="padding: 30px;">
         <div class="container">
             <h2>NEW CARDIO CLASSES THIS SUMMER. PAY NOW AND GET 25% DISCOUNT</h2>
@@ -180,6 +180,45 @@ layout: default
 </div>
 <!-- TRAINERS -->
 
+<!--MODAL TEMPLATES -->
+
+{% for trainer in site.data.trainer_bios %}
+
+<div class="modal fade" id="{{trainer.id}}" tabindex="-1" role="dialog" aria-labelledby="trainerBio" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content" style="padding:2%;">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <div class="separator-info">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <h3 class="d-border-c" style="border-right: 0; border-left: #f9690e solid 6px; padding-left: 20px; text-align: left;">{{ trainer.name }}</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-5 col-xs-12 trainer-profile-pic-wrapper">
+                        <img class="trainer-profile-pic" src="{{trainer.profile_photo_src | asset_path}}">
+                    </div>
+                    <div class="col-md-8 col-sm-7 col-xs-12 trainer-profile-contentbody">
+                        <p>{{ trainer.body }}</p>
+
+                        {% for bullet in trainer.bullets %}
+                        <p class="trainer-profile-wrapper"><i class="fa fa-star table-cell star-bullet"></i><span class="table-cell">{{ bullet }}</span></p>
+                        {% endfor %}
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endfor %}
+<!--MODAL TEMPLATES-->
+
 <!-- TESTIMONIALS -->
 <div class="parallax parallax-5 testimonials" style="background: url({% asset_path TRX-Rip-Trainer-5.jpg %}) top center no-repeat fixed; background-size: cover;">
     <div class="black-bg padding">
@@ -223,59 +262,26 @@ layout: default
 </div>
 <!-- SEPARATOR INFO -->
 
-
 <!-- MAP -->
 <div class="map-location">
-    <div class="container">
-        <form class="d-bg-c contact-form" style="background: rgba(245, 130, 29, 0.90) !important;">
-            <div>
-                <div><i class="fa fa-phone"></i> <span>{{ site.data.contact_details.telephone }}</span></div>
-                <div><i class="fa fa-calendar"></i><span>{{ site.data.contact_details.business_hours }}</span></div>
-            </div>
-            <input type="text" name="contact-name" class="contact-form-line" placeholder="Name">
-            <input type="text" name="contact-email" class="contact-form-line" placeholder="E-mail">
-            <textarea name="contact-message" class="contact-form-area" placeholder="Message"></textarea>
-            <input type="submit" value="Send" class="form-send button-2 bold d-text-c d-text-c-h">
-        </form>
-    </div>
     <iframe src="{{site.google_maps_url}}" width="600" height="450" frameborder="0" style="border:0"></iframe>
 </div>
-<!-- MAP -->
 
-<!--MODAL TEMPLATES -->
-
-{% for trainer in site.data.trainer_bios %}
-
-    <div class="modal fade" id="{{trainer.id}}" tabindex="-1" role="dialog" aria-labelledby="trainerBio" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <div class="separator-info" id="contact">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-12 col-sm-12 col-xs-12">
-                                    <h3 class="d-border-c" style="border-right: 0; border-left: #f9690e solid 6px; padding-left: 20px; text-align: left;">{{ trainer.name }}</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4 col-sm-5 col-xs-12 trainer-profile-pic-wrapper">
-                            {{trainer.profile_photo_src | image }}
-                        </div>
-                        <div class="col-md-8 col-sm-7 col-xs-12 trainer-profile-contentbody">
-                            <p>{{ trainer.body }}</p>
-
-                            {% for bullet in trainer.bullets %}
-                                <p class="trainer-profile-wrapper"><i class="fa fa-star table-cell star-bullet"></i><span class="table-cell">{{ bullet }}</span></p>
-                            {% endfor %}
-
-                        </div>
-                    </div>
-                </div>
-            </div>
+<div class="row" style="padding: 30px 0;">
+    <div class="container">
+        <div class="col-md-6">
+            <div class="trainer-profile-wrapper"><span class="table-cell"><h4>HAVE A QUESTION?</h4> <h5>Feel free to leave us a message by clicking on the tab below on the right. We'll get back to you as soon as we can.</h5></span></div>
+            <br>
+        </div>
+        <div class="col-md-6">
+            <h4>ADDRESS</h4>
+            <div class="trainer-profile-wrapper"><i class="fa fa-building table-cell star-bullet" style="vertical-align: top; padding-top: 8px;"></i><span class="table-cell">{{ site.data.contact_details.address }}</span></div>
+            <br>
+            <div class="trainer-profile-wrapper"><i class="fa fa-calendar table-cell star-bullet"></i><span class="table-cell">{{ site.data.contact_details.business_hours }}</span></div>
+            <br>
+            <div class="trainer-profile-wrapper"><i class="fa fa-phone table-cell star-bullet"></i> <span class="table-cell">{{ site.data.contact_details.telephone }}</span></div>
+            <br>
         </div>
     </div>
-
-{% endfor %}
+</div>
+<!-- MAP -->

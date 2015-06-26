@@ -3,7 +3,23 @@
     <title>{{site.name}}</title>
     <meta name="description" content="{{site.description}}" />
     <meta name="author" content="{{site.author}}" />
-    <link rel="shortcut icon" href="images/elements/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="57x57" href="{% asset_path apple-icon-57x57.png %}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{% asset_path apple-icon-60x60.png %}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{% asset_path apple-icon-72x72.png %}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{% asset_path apple-icon-76x76.png %}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{% asset_path apple-icon-114x114.png %}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{%  asset_path apple-icon-120x120.png %}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{%  asset_path apple-icon-144x144.png %}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{%  asset_path apple-icon-152x152.png %}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{%  asset_path apple-icon-180x180.png %}">
+    <link rel="icon" type="image/png" sizes="192x192"  href="{% asset_path android-icon-192x192.png %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% asset_path favicon-32x32.png %}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{%  asset_path favicon-96x96.png %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{%  asset_path favicon-16x16.png %}">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <!-- ======================================================================
                                 Mobile Specific Meta
     ======================================================================= -->
@@ -22,6 +38,7 @@
 {% include header.html %}
 
 <div class="content">
+    <div class="loader" style="background: url({% asset_path ajax-loader.gif %}) 50% 50% no-repeat #fff"></div>
     {{ content }}
 </div>
 
@@ -44,6 +61,11 @@
 {% javascript headroom.min %}
 
 <script>
+
+    $(window).load(function() {
+        $(".loader").fadeOut("slow");
+    });
+
     smoothScroll.init();
     // grab an element
     var myElement = document.querySelector(".navbar-fixed-top");
@@ -84,7 +106,22 @@
             $(".navbar-toggle").click()
         }, 600);
     });
+
 </script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var $_Tawk_API={},$_Tawk_LoadStart=new Date();
+    (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/558b5e4f5ba3c08647085f56/default';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+    })();
+</script>
+<!--End of Tawk.to Script-->
 
 <!--<script src="/color-box/color-js.js" type="text/javascript"></script>-->
 <!--<script src="/color-box/farbtastic/farbtastic.js" type="text/javascript"></script>-->
